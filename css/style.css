@@ -1,0 +1,382 @@
+/* 
+Project Name: Final Project
+Client: Chris Kirk
+Author: Chris
+Mad Awesome Coder in SYD
+*/
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: rgb(37, 37, 37);
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background:url(../images/syd11.png) top center no-repeat;
+     background-position: center top;
+     font-family:OverlockRegular;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.right {
+     float:right;
+     margin: 0 auto;
+}
+
+.alignright {
+     float: right; 
+     padding: 0 0 10px 10px; 
+}
+
+.alignleft {
+     float: left; 
+     padding: 0 10px 10px 0; 
+}
+
+.container_12 {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#hero {
+     height:410px;
+     min-width:960px;
+     top: 0;
+     z-index: -1;
+ }
+ #hero-back {
+     height:430px;
+     width:100%;
+     top:0;
+     z-index:-2;
+}
+
+header {
+     background: transparent;
+     padding-top:20px;
+}
+
+footer {
+     margin-top:30px;
+     height:60px;
+     background: black; 
+}
+
+#section2 {
+     padding-top:24px;
+}
+     
+.break {
+     height:30px;
+}
+
+.space {
+     margin-top: 25px;
+}
+
+
+/******************************************
+/* Navigation bar                
+/*******************************************/
+
+#logo {
+     padding:20px; 
+     background:url(../images/yoma2.png);
+     width:181px;
+}
+
+nav {
+     padding:16px 0 8px;
+}
+
+nav a {
+     padding:15px 5px;
+     height:70px;
+     width:100px;
+     text-align: right;
+     font-size: 1.8em;
+     text-decoration: none;
+     color:white;
+     font-family: PacificoRegular;
+}
+
+
+/******************************************
+/* Section 1            
+/*******************************************/
+
+h1 {
+     height:70px;
+     text-shadow: 0 0 5px rgb(14, 13, 13), 0 0 10px rgb(12, 12, 12), 0 0 15px; 
+     color: white;
+     font-family: PacificoRegular;
+     font-size:3.2em;
+}
+
+h2 {
+     text-align:center;
+     padding:14px 0px 0px 0px;
+     font-size:2.4em;
+     font-weight: bold;
+     color: rgb(255, 255, 255);
+     text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+}
+
+h3 {
+     text-align:center;
+     padding-top:5px;
+     padding-bottom:245px;
+     font-size:1.4em;
+     font-weight: bold;
+     height:320px;
+     color: rgb(255, 255, 255);
+     text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+}
+
+h4 {
+     font-family:PacificoRegular;
+     font-size: 1.8em;
+     border-bottom: 1px solid rgba(136, 136, 136, 0.7);
+     margin: 25px 0 25px 0;
+
+}
+
+
+
+/******************************************
+/* Section 2            
+/*******************************************/
+
+.intro2 {
+     text-align: center;
+     padding-bottom: 11px;
+}
+
+#remaining {
+      background:url(../images/pattern.png) center;
+ }
+
+#one {
+     background:url(../images/pick.jpg) center;
+     }
+
+#two {
+     background:url(../images/meet.jpg) center;
+     }
+
+#three {
+     background:url(../images/date.jpg) center;
+     }
+
+.caption {
+     padding:10px 0;
+     background:rgba(0, 0, 0, 0.5);
+     text-align: center;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+
+.caption a{
+     color:white;
+     font-size:1.2em;
+     font-weight: bold;
+  
+}
+
+.precaption {
+     height:177px;
+}
+
+
+/******************************************
+/* Section 3            
+/*******************************************/
+
+.sidebar {
+     background: white;
+     border-radius:5px;
+     height:225px;
+     font-family: PacificoRegular;
+     font-size: 2.5em;
+     text-align: center;
+     padding: 34px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+.box {
+     padding:10px 0;
+   
+}
+
+.box2 {
+     padding:10px 0;
+     
+}
+
+.box3 {
+     height:70px;
+}
+
+.rounded {
+     padding:10px 0;
+     background:white;
+     border-radius:8px;
+     height:225px;
+}
+
+
+.rounded2 {
+     padding:10px 0;
+     border-radius:5px;
+     height:225px;
+     background:url(../images/woman2.jpg) left;
+}
+
+.rounded3 {
+     height:205px;
+     border-radius:5px;
+     background:yellow;
+}
+
+.extra {
+     height:60px;
+     padding:15px 30px 15px;
+}
+
+.what {
+     font-size:1.5em;
+     text-align:center;
+     padding-top:17px;
+}
+
+.what a {
+     padding:6px 30px;
+     top:-5px;
+     position:relative;
+     margin-left:4px;
+     margin-right:60px;
+
+}
+
+.city {
+        color: #fff;
+        text-shadow: 0 0 5px rgb(14, 13, 13), 0 0 10px rgb(12, 12, 12);
+}
+
+.citylights:hover {
+        color: #fff;
+        text-shadow: 0 0 5px rgb(14, 13, 13), 0 0 10px rgb(12, 12, 12), 0 0 15px #fff, 0 0 20px rgb(224, 16, 16), 0 0 30px rgb(248, 0, 0), 0 0 40px rgb(243, 12, 12), 0 0 50px rgb(238, 35, 8), 0 0 75px rgb(230, 32, 23);
+}
+
+.sweet:hover {
+     -moz-box-shadow: -3px -3px 3px #888;
+     -webkit-box-shadow: -3px -3px 3px #888;
+     box-shadow: -3px -3px 3px #888;
+}
+
+.border {
+     height: 1px;
+     border-top: 1px solid #eaeaea;
+}
+
+/******************************************
+/* Footer                
+/*******************************************/
+
+#bottom1 {
+     color:white;
+     height:30px;
+     float:left;
+     padding:14px 10px 10px 55px;
+}
+
+#bottom2 {
+     color:black;
+}
+
+
+/******************************************
+/* BUTTON & externally generated items             
+/*******************************************/
+
+.classname {
+     -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+     -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+     box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+     background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+     background-color:#79bbff;
+     -moz-border-radius:9px;
+     -webkit-border-radius:9px;
+     border-radius:9px;
+     border:1px solid #84bbf3;
+     display:inline-block;
+     color:#ffffff;
+     font-family:OverlockRegular;
+     font-size:16px;
+     font-weight:bold;
+     padding:7px 24px;
+     text-decoration:none;
+     text-shadow:1px 1px 0px #253545;
+}.classname:hover {
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+     background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+     background-color:#378de5;
+}.classname:active {
+     position:relative;
+     top:1px;
+}
+
+.whitepanel {
+background-color: #fff;
+border: 1px solid #dadada;
+padding: 0px;
+margin-bottom: 22px;
+color: #333;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+
+
