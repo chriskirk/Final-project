@@ -20,7 +20,6 @@ $(document).ready(function () {
 		// A field was missed, so don't submit.
 		if ( ! form_okay) {
 			event.preventDefault();
-			alert('Please complete all fields');
 		}
 
 	});

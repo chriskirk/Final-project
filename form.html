@@ -6,38 +6,61 @@
 		<link rel="stylesheet" href="css/960_12_col.css">
 		<link rel="stylesheet" href="font/stylesheet.css">
 		<link rel="stylesheet" href="font/stylesheet2.css">
+		<link href="css/screen.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	</head>
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 
+<script src="js/jquery.js"></script>
+	<script src="js/jquery.simpleValidate.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('form.required-form').simpleValidate({
+				errorElement: 'em',
+				ajaxRequest: true,
+				completeCallback: function($el) {
+					var formData = $el.serialize();
+					alert('Do some AJAX if you want: ' + formData);
+				}
+			});
+		});
+	</script>
+
+	<div id="topper">
+		<h1>Contact Us</h1><h2><a class="citylights" href="index.html">Home</a> <em></em><h2>
+	</div>
+	
 	<body>
-	<div class="top">	
-		<h1> Wingmates</h1>
-
-		<div class="right citylights">
-			<a class="home"href="index.html">Home</a>
-		</div>
+		<div id="container">
+		<form action="thanks.htm" class="required-form" method="post">
+			<ol class="forms">
+				<li>
+					<label for="name"><em class="required"></em>Name</label>
+					<input type="text" name="name" id="name" class="required" />
+				</li>
+				<li>
+					<label for="email"><em class="required"></em>Email</label>
+					<input type="text" name="email" id="email" class="required email" />
+				</li>
+				<li>
+					<label for="Postcode">Postcode</label>
+					<input type="text" name="website" id="website" />
+				</li>
+				<li>
+					<label for="comment"><em class="required"></em> Message</label>
+					<textarea name="comment" id="comment" class="required"></textarea>
+				</li>
+				<li class="buttons">
+					<button type="submit">Submit</button>
+				</li>
+			</ol>
+		</form>
 	</div>
 
-	<div id="page-wrap">
-
-		<h2> We are launching in Sydney soon.</h2>
-		<h3> Give us your details and we will keep you posted!</h3>
-					
-	<div id="form">
-           <form action="/sendcontact">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="Postcode" placeholder="Postcode">
-                <textarea placeholder="Your message here"></textarea>
-                <input type="submit" href="Submit" class="classname badge">
-            </form>
-
-		
-			
-	</div>
 
 </body>
 
 </html>
+
+
+

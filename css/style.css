@@ -261,11 +261,16 @@ h4 {
 }
 
 
-.rounded2 {
-     padding:10px 0;
-     border-radius:5px;
+.bottom2 {
      height:225px;
-     background:url(../images/woman2.jpg) left;
+     
+    }
+
+#yep img {
+      border:1px solid #;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;  
 }
 
 .rounded3 {

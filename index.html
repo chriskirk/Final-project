@@ -13,8 +13,17 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="font/stylesheet.css">
 		<link rel="stylesheet" href="font/stylesheet2.css">
-				
+		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+		
+			
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
 
 	</head>
 	<body>
@@ -58,6 +67,7 @@
 						<a> Pick a night</a></div>	
 					</div>
 
+
 					<div class="rounded grid_4 sweet" id="two">
 						<div class="precaption"></div>
 						<div class="caption">
@@ -74,8 +84,11 @@
 			<div class="box container_12 clearfix">
 				<section id="section2" class="grid_12">
 					<h4 class="grid_12 intro2 alpha omega">	Our customers</h4>
-					<div class="rounded2 grid_8 alpha sweet">	</div>
-					<div class="grid_4 sidebar omega sweet">"Basically once you read this text you will be sold!" </div>
+					<div class="push_1 bottom2 grid_6 alpha">
+						<a class="fancybox" id="yep" rel="group" href="images/TheNerdsWon.png"><img src="images/nerd1.jpg" alt="" /></a>	
+					</div>
+
+					<div class="push_1 grid_4 sidebar omega sweet">"Basically once you read this text you will be sold!" </div>
 				</section>
 
 				<div class="break container_12 grid_12 alpha omega"></div>
